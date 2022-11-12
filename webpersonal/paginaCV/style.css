@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+th,td {
+    text-align: left;
+    border-style: groove;
+}
+div .thead {
+    width: 75rem;
+    height: 100rem;
+    position: relative;
+    left: 10rem;
+    top: 10rem;
+    overflow: auto;
+}
+
+/**/
+thead .perfil {
+    display: inline-block;
+}
+
+thead .perfil img {
+    width: 10rem;
+    
+} 
