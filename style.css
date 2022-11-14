@@ -43,12 +43,23 @@ header div {
     width: 13%;
 
 }
-header img {
+header div img {
     display: inline-block;
     width: 5rem;
-    margin-right: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+
     
 }
+
+header img.navbird {
+    position: absolute;
+    left: 4%;
+    bottom: 1%;
+    width: 5rem;
+
+}
+
 h2 {
     padding: 1rem 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -62,30 +73,22 @@ nav {
     font-weight: 900;
     text-shadow: .3rem .3rem .3rem whitesmoke;
     border-bottom: 0.3rem solid rgb(11, 11, 81);
-    padding: 0.5rem 12rem;
-
-    
+    padding: 0.5rem 12rem; 
 }
+
 nav ul li {
     display:inline-block;
     list-style: none;
-    padding: 0 7%;
-
+    padding: 0 7%;  
 }
 
 nav a {
-    color: rgb(11, 94, 146);
-    
+    color: rgb(11, 94, 146);   
 }
-
-
-
-
-
 
 /*contenidos principales*/
 /*caja padre de MAIN*/
-div {
+div.contenido {
     width: 75%;
     background-color: rgba(0,0,0,0);
     margin: 0 auto;
@@ -118,6 +121,7 @@ h1.bienvenido {
 
 
 p.introducion {
+    /*sacar de las columnas este párrafo */
     column-span: all;
     padding-bottom: 2rem;
     
@@ -137,53 +141,31 @@ section {
     padding: 2rem 2rem;
 }
 
-/*section de caracteristica personal
-h1 {
-    display: inline-block;
-    border: 1rem ridge;
-    border-radius: 4rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 0 1.5rem;
-}
-.caracteristica p {
-    display: inline-block;
-    width: 30%;
-    height: 10rem;
-    border-left: 0.5rem solid black;
-    margin-top: 3rem;
-    padding: 0 2rem;
-}
-p.caracter1 {
-    border-left: 0px;
-}
-*/
 
 
 /*section de actividad*/
-.actividad img {
-    display: block;
-    width: 70%;
-    margin:3rem auto 6rem;
-
+div.actividad {
+    width: 100%;
+    margin: 5rem;
+    overflow: auto;
 }
-.actividad span {
+.actividadtxt,
+.actividad div img {
+    width: 25%;
+    float: left;
+    margin: 0 2rem;
+    text-align: justify;
     color: brown;
-    font-style: italic;
-    font-weight: 800;
-    background-color: whitesmoke;
-    text-align: center;
-    text-shadow: 0.5rem 0.5rem 0.5rem grey;
-    display: block;
-    border: 1rem ridge ;
-    width: 15rem;
-    margin: 4.5rem auto;
+}
+
+div .actividad2 img {
+    height: 18rem;
 
 }
 
 
 /*section de aplicacion web*/
+
 .app a {
     display: block;
     width: 20%;
@@ -213,7 +195,7 @@ aside {
 
 
  aside img {
-    width: 10rem;
+    width: 12rem;
     margin: 1.5rem 25%;
     
  }
@@ -226,8 +208,8 @@ aside {
     line-height: 3rem;
     list-style-position: inside;
     list-style-type: circle;
-    margin-left: 1.5rem;
-    padding: 4.5rem 0;
+    margin: 1.5rem 2.5rem;
+    padding: 2.5rem 0;
  }
 
 
@@ -271,3 +253,4 @@ footer img {
     width: 2rem;
     
 }
+
