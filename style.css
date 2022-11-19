@@ -6,7 +6,7 @@
 
 html {
     font-size: 62.5%;
-    background-image: url("../img/sunset.jpg");
+    background-image: url("../webpersonal/img/sunset.jpg");
     background-position: center top;
     background-attachment: fixed;
 
@@ -32,7 +32,7 @@ header {
     width: 75%;
     height: 10rem;
     border-radius: 1rem;
-    background-image: url("../img/sunset2.jpg");
+    background-image: url("../webpersonal/img/sunset2.jpg");
     margin: 1.5rem auto 0;
 
 }
@@ -221,7 +221,7 @@ aside {
     width: 75%;
     height: 10rem;
     border-radius: 1rem;
-    background-image: url("../img/city.png");
+    background-image: url("../webpersonal/img/city.png");
     background-size: 50rem 20rem;
     margin: 1rem auto;
 }
