@@ -48,6 +48,7 @@ figure img {
     margin: 0;
 }
 
-iframe {
+iframe,
+p {
     margin: 5rem 3rem;
 }
