@@ -1,0 +1,53 @@
+header img.navbird {
+    position: absolute;
+    right: 15%;
+    bottom: 1%;
+    width: 5rem;
+}
+
+div main {
+    width: 67%;  
+}
+
+aside {
+    width: 32%;
+    margin-left: 1rem;
+    position: relative;
+    float: left;
+}
+
+aside > h2 {
+    word-spacing: 5rem;
+    text-align: center;
+    text-shadow: 2px -1px snow, 3px -2px black;
+}
+
+aside section {
+    width: 43%;
+    float: left;
+    margin: 1rem;
+    border: 3px snow dashed;
+    border-radius: 1rem;
+}
+section a:visited {
+    color: black;
+}
+
+div figure {
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin: .1rem;
+}
+
+figcaption {
+    margin: .5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+figure img {
+    margin: 0;
+}
+
+iframe {
+    margin: 5rem 3rem;
+}

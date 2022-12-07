@@ -1,0 +1,93 @@
+/*encabecera*/
+header img.navbird {
+    position: absolute;
+    right: 40%;
+    bottom: 1%;
+    width: 5rem;
+}
+
+div main {
+    font-size: 2rem;
+}
+
+/*aside datos basicos*/
+h3 {
+    text-align: center;
+    word-spacing: 5rem;
+    padding-top: 2rem;
+}
+
+span {
+    display: block;
+    padding:0 1rem 2rem 10rem;
+    text-transform: uppercase;
+}
+
+/*-------formulario-----------*/
+h1 {
+    text-align: center;
+    text-shadow: 3px 3px 3px darkcyan;
+}
+div.formulario {
+    width: 96%;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+}
+
+fieldset {
+    width: 90%;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+legend {
+    color: darkslategray;
+}
+
+input {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0);
+    border: 2px black solid;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    margin: .5rem;
+    outline: none;
+}
+
+
+div.motivoContacto {
+    margin: 5rem 5rem 2rem 5rem;
+}
+fieldset.datosP,
+fieldset.formaContact {
+    width: 40%;
+    display: inline-block;
+}
+legend {
+    font-weight: 900;
+    text-align: center;
+}
+
+textarea {
+    width: 90%;
+    height: 15rem;
+    resize: none;
+    outline: none;
+}
+input#enviar,
+input#borrar {
+    border: 3px ridge black;
+    border-radius: 8px;
+    font-weight: 900;
+    background-color: #fff;
+    margin-left: 15rem;
+    padding: 1rem;
+}
+input#enviar:hover,
+input#borrar:hover{
+    background-color: darkgray;
+}

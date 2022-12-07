@@ -1,0 +1,86 @@
+header img.navbird {
+    position: absolute;
+    left: 30%;
+    bottom: 1%;
+    width: 5rem;
+}
+
+/*------parte del curriculum-----------*/
+
+table {
+    /* quitar el espacio entre las celdas, no se aplica si añadimos en tr,th,td */
+    border-spacing: 0;
+}
+
+
+/*caja grande para el curriculum para que se situa en el centro*/
+div.curriculum {
+    width: 95%;
+    position: relative;
+    top: 1rem;
+    left: 2%;
+    background-color: gainsboro;
+    border-bottom: 2rem solid black;
+    border-top: 2rem solid black;
+}
+thead,
+.cabecera {
+    background-color: aliceblue;
+    
+}
+
+
+div img.perfil {
+    width: 10rem;
+    margin: 8rem 5rem 2rem 10rem;
+}
+table.datos {
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+    
+}
+
+table.estudios {
+    margin: 4.5rem 5rem;
+    
+}
+table.contactos {
+    position: absolute;
+    top: 25rem;
+    right: 8rem;
+}
+
+table.experiencias,
+table.idiomas,
+table.competencias {
+    width: 80%;
+    margin: 3rem 5rem;
+    border-bottom: .1rem solid black;
+}
+
+td {
+    padding: .5rem;
+}
+
+table ul li {
+    list-style: none;
+    float: left;
+    margin: 1rem;
+}
+
+h3 {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 2rem auto;
+    font-size: 2rem;
+    text-shadow: 2px -1px gold, 3px -2px black;
+}
+
+video {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+
+

@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-image: url("../img/sunset.jpg");
+    background-position: center top;
+    background-attachment: fixed;
+
+}
+
+a {
+    display: inline-block;
+    /*text-decoration-style: dashed;
+    text-decoration-color: whitesmoke;*/
+    color: black;
+}
+
+a:hover {
+    background-color:  whitesmoke; 
+}
+
+/*link externo*/
+.app a:visited,
+aside a:visited {
+    color: goldenrod;
+}
+
+/*encabecera*/
+header {
+    position: relative;
+    width: 75%;
+    height: 10rem;
+    border-radius: 1rem;
+    background-image: url("../img/sunset2.jpg");
+    margin: 1.5rem auto 0;
+
+}
+
+header div {
+    position: absolute;
+    bottom: .5rem;
+    right: .1rem;
+}
+
+header div img {
+    display: inline-block;
+    width: 5rem;
+    margin: 1rem;
+    padding: 1rem; 
+}
+
+h2#top {
+    padding: 1rem 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.5rem;
+}
+
+/*navegador*/
+nav {
+    height: 5rem;
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: .3rem .3rem .3rem whitesmoke;
+    border-bottom: 0.3rem solid rgb(11, 11, 81);
+    padding: 0.5rem 12rem; 
+}
+
+nav ul li {
+    display:inline-block;
+    list-style: none;
+    padding: 0 4%;  
+}
+
+/*---------solo aplicar al primer li-----------*/
+nav ul li:nth-of-type(1) {
+    margin-left: 10rem;
+}
+
+nav a {
+    color: rgb(11, 94, 146);
+    text-decoration: none;   
+}
+
+/*contenidos principales*/
+/*caja padre de MAIN*/
+div.contenido {
+    width: 75%;
+    background-color: rgba(0,0,0,0);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+div main {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.4rem;
+    width: 75%;
+    border-radius: 1rem;
+    background-color:  rgba(0,0,0,.3);
+    margin: 0 auto;
+    float: left;
+}
+
+/*lateral*/
+aside {
+    width: 24%;
+    border-radius: 1rem;
+    background-color:  rgba(0,0,0,.3);
+    margin: 0 auto 1.5rem;
+    float: right;
+}
+
+h2 {
+    padding: 1rem 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+aside img {
+    width: 12rem;
+    margin: 1.5rem 25%; 
+}
+
+aside ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    list-style-position: inside;
+    list-style-type: circle;
+    margin: 1.5rem 2.5rem;
+    padding: 2.5rem 0;
+}
+
+ /*pie de pagina*/
+footer {
+    position: relative;
+    width: 75%;
+    height: 10rem;
+    border-radius: 1rem;
+    background-image: url("../img/city.png");
+    background-size: 50rem 20rem;
+    margin: 1rem auto;
+}
+
+footer p {
+    font-size: large;
+    font-weight: 700;
+    color: grey;
+    text-align: center;
+}
+
+footer div {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 4%;
+    font-weight: 800;
+    box-shadow: .3rem .3rem .2rem black;
+    border-radius: .3rem;
+    position: fixed;
+    bottom: 10rem;
+    right: 8rem;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    float: right;
+}
+
+footer img {
+    display: inline-block;
+    width: 2rem;
+}
+

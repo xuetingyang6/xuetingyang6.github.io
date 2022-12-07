@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="../estructura/styleLayout.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 id="top" title="Xueting Yang">WEB PERSONAL</h2>
+        <img src="../img/bird.jpg" alt="bird" class="navbird">
+        <div>
+            <a href="mailto:xueting.yangeduca.madrid.org"><img src="../img/email.png" alt="email" title="Escribir un mail"></a> 
+            <a href="tel:+34611111111"><img src="../img/phone.jpg" alt="phone" title="LLamar"></a> 
+        </div>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../paginaprincipal/paginaprincipal.html">Inicio</a></li>
+            <li><a href="../paginaCV/cv.html">Currículum</a></li>
+            <li><a href="../paginaformulario/formulario.html">Contáctame</a></li>
+            <li><a href="../paginaproyecto/proyecto.html">Proyecto</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="contenido">
+        <main>
+            <div class="formulario">
+                <h1> Formulario de contacto</h1>
+                <form action="formularioInteresado" method="get">
+                    <div class="motivoContacto">
+                        <p>Motivo de contáctame:
+                            <select name="tipoMensaje" id="tipoMensaje">
+                                <option value="none" selected>-</option>
+                                <option value="interesado">Interesado</option>
+                                <option value="preguntas">Preguntas</option>
+                                <option value="recomentarios">Sugerencias</option>
+                            </select>
+                        </p>
+                        <p><textarea name="comentarios" id="comentario" placeholder="Escribir aquí"></textarea></p>
+                    </div>
+                    <fieldset class="datosP">
+                        <legend>Datos personales</legend>
+                        <p><label for="nombre">Nombre:</label><input type="text" name="nombre" id="nombre" size="10"></p>
+                        <p><label for="apellido">Apellido:</label><input type="text" name="apellido" id="apellido" size="10"></p>
+                        <p><label for="puestoPersonal">Puesto:</label><input type="text" name="puesto" id="puestoPersonal" size="10"> </p>
+                        
+                    </fieldset>
+                    <fieldset class="formaContact">
+                        <legend>Forma de contacto</legend>
+                        <p><label for="tel">Teléfono de contacto:</label><input type="tel" name="telEmpresa" id="tel" maxlength="11" size="10"></p>
+                        <p><label for="email">Correo electrónico:</label><input type="email" name="email" id="email"></p>
+                        
+                    </fieldset>
+                    
+                    
+                    <fieldset>
+                        <legend>Trabajo que me ofrecería</legend>
+                        <p>Contrato: 
+                            <input type="radio" name="contrato" id="si"><label for="si">SÍ</label>
+                            <input type="radio" name="contrato" id="no"><label for="no">NO</label> 
+                        </p>
+                        <details open>
+                            <summary>Tipo de jornada:</summary>
+                            <p>
+                                <input type="radio" name="jornada" value="jornadaCompleta" id="jc"><label for="jc">Jornada completa</label>
+                                <input type="radio" name="jornada" value="jornadaMedia" id="jm"><label for="jm">Jornada media</label>
+                                <input type="radio" name="jornada" value="jornadaHoraria" id="jh"><label for="jh">Jornada horaria</label>
+                            </p>
+
+                        </details>
+                        
+                        <p><label for="puestoOfrece">Puesto de trabajo:</label><input type="text" name="puesto" id="puestoOfrece" size="10"></p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Datos de la empresa</legend>
+                        <p><label for="nombreEmpresa">Nombre de la empresa:</label><input type="text" name="nombreEmpresa" id="nombreEmpresa"></p>
+                        <details open>
+                            <summary>Tipo de empresa:</summary>
+                            <p><input type="checkbox" name="empresaAutonomo" id="autonomo"><label for="autonomo">Autónomos</label>
+                                <input type="checkbox" name="empresaPrivada" id="privada"><label for="privada">Privada</label>
+                                <input type="checkbox" name="empresaPublica" id="publica"><label for="publica">Pública</label><br>
+                                <input type="checkbox" name="empresaPYMES" id="pymes"><label for="pymes">PYMES</label>
+                                <input type="checkbox" name="empresaGran" id="grande"><label for="grande">Grandes</label>
+                            </p>
+
+                        </details>
+                        
+                        <p>Horarios de la empresa: <input type="time"> - <input type="time"></p>
+                        <p> <label for="localizacion"> Localización: </label><input type="text" name="localizacion" id="localizacion"> </p>
+                        <p>País:
+                            <select name="pais" id="pais">
+                                <option value="none">-</option>
+                                <optgroup label="Asia">
+                                    <option value="china">China</option>
+                                    <option value="japon">Japón</option>
+                                    <option value="malasia">Malasia</option>
+
+
+                                <optgroup label="Europa">
+                                    <option value="espania">España</option>
+                                    <option value="francia">Francia</option>
+                                    <option value="italia">Italia</option>
+                            </select>
+                        </p>
+                        <p><label for="urlEmpresa">Página web de la empresa:</label>  <input type="url" name="urlEmpresa" id="urlEmpresa"></p>
+                        <p>Licencia: <input type="file" name="licencia" id="licencia"> </p>
+                    </fieldset>
+                    <p>
+                        <input type="submit" value="ENVIAR" id="enviar">
+                        <input type="reset" value="BORRAR TODO" id="borrar">
+                    </p>
+                    
+                </form>
+            </div>
+        </main>
+        <aside>
+            <div>
+                <h3>DATOS BÁSICOS</h3>
+                <img src="../img/perfil0.jpg" alt="foto de perfil">
+                <ul>
+                    <li>Nombre: Xueting Yang</li>
+                    <li>Ciudad: Madrid</li>
+                    <li>Instituto: 
+                        <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">I.E.S Villablanca</a>
+                    </li>
+                    <li>Curso: SMR</li>
+                </ul>
+                <span title="Ir al Currículum CV"><a href="../paginaCV/cv.html">--más informaciones</a></span>
+            </div>
+        </aside>
+
+    </div>
+    <footer>
+        <p>〜(￣△￣〜) --Ya ha llegado al fondo-- (〜￣△￣)〜</p>
+        <div><a href="#top">
+            <img src="../img/arrow2.jpg" alt="volver a arriba">
+            TOP
+            </a>
+            
+        </div>
+    </footer>
+
+</body>
+</html>
